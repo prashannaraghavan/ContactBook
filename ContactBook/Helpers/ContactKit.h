@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AddressBook/AddressBook.h>
 #import <Contacts/Contacts.h>
 
 @interface ContactKit : NSObject
 {
     CNContactStore *contactStore;
-    ABAddressBookRef *addressBookRef;
 }
 
 +(id)sharedInstance;
