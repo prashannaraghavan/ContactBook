@@ -10,6 +10,10 @@
 
 @implementation ContactKit
 
+/*!
+ * @discussion A function to create singleton object
+ */
+
 +(id)sharedInstance
 {
     static ContactKit *contactKit = nil;
@@ -29,6 +33,12 @@
     
     return self;
 }
+
+#pragma mark - Custom Contact fetching events
+/*!
+ * @discussion A function to check the latest Contact Framework and trigger access notification to the user
+ * @return Fetched contacts are returned as NSMutableArray.
+ */
 
 -(NSMutableArray *)fetchContacts {
     
@@ -67,6 +77,11 @@
     
     return contactsArray;
 }
+
+/*!
+ * @discussion A function to fetch contacts from Contacts framework
+ * @return Fetched contacts are returned as NSMutableArray.
+ */
 
 -(NSMutableArray *)fetchFromContactsFramework
 {

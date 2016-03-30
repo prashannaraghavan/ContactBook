@@ -32,10 +32,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableView delegate methods
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.contactsArray count];
-//    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,6 +56,8 @@
     
     return contactCell;
 }
+
+#pragma mark - UIStoryboardSegue methods
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

@@ -38,6 +38,12 @@
 }
 */
 
+#pragma mark - Custom event handling events
+
+/*!
+ * @discussion A function to display contact details.
+ */
+
 -(void)displayContact
 {
     self.contactName = [NSString stringWithFormat:@"%@ %@",self.contact.givenName,self.contact.familyName];
@@ -61,6 +67,37 @@
     
 }
 
+/*!
+ * @discussion A function to send SMS with the help of MFMessageComposerViewController.
+ */
+
+- (void)sendSMS {
+    
+    if(![MFMessageComposeViewController canSendText]) {
+        
+        NSString *message = @"Your device doesn't support SMS!";
+        [self displayAlertWithTitle:@"Error" andMessage:message];
+        
+        return;
+    }
+    
+    NSArray *recipents = @[self.primaryNumber];
+    NSString *message = self.messageTexxt.text;
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:recipents];
+    [messageController setBody:message];
+    
+    [self presentViewController:messageController animated:YES completion:nil];
+}
+
+/*!
+ * @discussion A utility function to display alert based on the title and message.
+ * @param title A custom title for the alert
+ * @param message A custom message for the alert
+ */
+
 -(void)displayAlertWithTitle:(NSString *)title andMessage:(NSString *)message
 {
     UIAlertController * alert=   [UIAlertController
@@ -80,6 +117,8 @@
     [alert addAction:ok];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+#pragma mark - MFMessageComposeViewController delegate methods
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult) result
 {
@@ -112,27 +151,11 @@
 }
 
 
-- (void)sendSMS {
-    
-    if(![MFMessageComposeViewController canSendText]) {
-        
-        NSString *message = @"Your device doesn't support SMS!";
-        [self displayAlertWithTitle:@"Error" andMessage:message];
-        
-        return;
-    }
-    
-    NSArray *recipents = @[self.primaryNumber];
-    NSString *message = self.messageTexxt.text;
-    
-    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
-    messageController.messageComposeDelegate = self;
-    [messageController setRecipients:recipents];
-    [messageController setBody:message];
-    
-    [self presentViewController:messageController animated:YES completion:nil];
-}
+#pragma mark - UIButton Action methods
 
+/*!
+ * @discussion An event handling function to send SMS whenever the Send button is clicked.
+ */
 - (IBAction)messageBtnClicked:(id)sender {
     if (![self.messageTexxt.text isEqualToString:@""] && self.messageTexxt.text!=nil) {
         [self sendSMS];
