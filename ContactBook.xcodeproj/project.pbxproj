@@ -14,20 +14,31 @@
 		3FEA4A4D1CABA57900689893 /* ContactBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA4A4B1CABA57900689893 /* ContactBook.xcdatamodeld */; };
 		3FEA4A4F1CABA57900689893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA4A4E1CABA57900689893 /* Assets.xcassets */; };
 		3FEA4A521CABA57900689893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA4A501CABA57900689893 /* LaunchScreen.storyboard */; };
+		3FEA4A5C1CABA8EE00689893 /* ContactKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA4A5B1CABA8EE00689893 /* ContactKit.m */; };
+		3FEA4A5F1CABB55500689893 /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA4A5E1CABB55500689893 /* ContactDetailViewController.m */; };
+		3FEA4A621CABBD1900689893 /* ContactImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA4A611CABBD1900689893 /* ContactImageView.m */; };
+		3FEA4A641CAC462C00689893 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEA4A631CAC462C00689893 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FEA4A3C1CABA57800689893 /* ContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FEA4A401CABA57800689893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FEA4A421CABA57800689893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3FEA4A431CABA57800689893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FEA4A451CABA57900689893 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FEA4A461CABA57900689893 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FEA4A401CABA57800689893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FEA4A421CABA57800689893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FEA4A431CABA57800689893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FEA4A451CABA57900689893 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FEA4A461CABA57900689893 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3FEA4A491CABA57900689893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FEA4A4C1CABA57900689893 /* ContactBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactBook.xcdatamodel; sourceTree = "<group>"; };
 		3FEA4A4E1CABA57900689893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEA4A511CABA57900689893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEA4A531CABA57900689893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEA4A5A1CABA8EE00689893 /* ContactKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ContactKit.h; path = Helpers/ContactKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FEA4A5B1CABA8EE00689893 /* ContactKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ContactKit.m; path = Helpers/ContactKit.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FEA4A5D1CABB55500689893 /* ContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ContactDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FEA4A5E1CABB55500689893 /* ContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FEA4A601CABBD1900689893 /* ContactImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ContactImageView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FEA4A611CABBD1900689893 /* ContactImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactImageView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FEA4A631CAC462C00689893 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEA4A641CAC462C00689893 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 		3FEA4A331CABA57800689893 = {
 			isa = PBXGroup;
 			children = (
+				3FEA4A631CAC462C00689893 /* MessageUI.framework */,
 				3FEA4A3E1CABA57800689893 /* ContactBook */,
 				3FEA4A3D1CABA57800689893 /* Products */,
 			);
@@ -60,16 +73,21 @@
 		3FEA4A3E1CABA57800689893 /* ContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				3FEA4A591CABA8AF00689893 /* Helpers */,
 				3FEA4A421CABA57800689893 /* AppDelegate.h */,
 				3FEA4A431CABA57800689893 /* AppDelegate.m */,
 				3FEA4A451CABA57900689893 /* ViewController.h */,
 				3FEA4A461CABA57900689893 /* ViewController.m */,
+				3FEA4A5D1CABB55500689893 /* ContactDetailViewController.h */,
+				3FEA4A5E1CABB55500689893 /* ContactDetailViewController.m */,
 				3FEA4A481CABA57900689893 /* Main.storyboard */,
 				3FEA4A4E1CABA57900689893 /* Assets.xcassets */,
 				3FEA4A501CABA57900689893 /* LaunchScreen.storyboard */,
 				3FEA4A531CABA57900689893 /* Info.plist */,
 				3FEA4A4B1CABA57900689893 /* ContactBook.xcdatamodeld */,
 				3FEA4A3F1CABA57800689893 /* Supporting Files */,
+				3FEA4A601CABBD1900689893 /* ContactImageView.h */,
+				3FEA4A611CABBD1900689893 /* ContactImageView.m */,
 			);
 			path = ContactBook;
 			sourceTree = "<group>";
@@ -80,6 +98,15 @@
 				3FEA4A401CABA57800689893 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FEA4A591CABA8AF00689893 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA4A5A1CABA8EE00689893 /* ContactKit.h */,
+				3FEA4A5B1CABA8EE00689893 /* ContactKit.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEA4A5F1CABB55500689893 /* ContactDetailViewController.m in Sources */,
+				3FEA4A621CABBD1900689893 /* ContactImageView.m in Sources */,
 				3FEA4A471CABA57900689893 /* ViewController.m in Sources */,
+				3FEA4A5C1CABA8EE00689893 /* ContactKit.m in Sources */,
 				3FEA4A441CABA57800689893 /* AppDelegate.m in Sources */,
 				3FEA4A411CABA57800689893 /* main.m in Sources */,
 				3FEA4A4D1CABA57900689893 /* ContactBook.xcdatamodeld in Sources */,
